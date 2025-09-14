@@ -1,2 +1,22 @@
-# Prerana-Kosh
-Prerana Kosh — A Treasury of Motivation is a platform that shares timeless motivational quotes, inspiring thoughts, and life-changing wisdom in English, Nepali, and Hindi. With daily inspiration, success stories, and positive energy, we uplift minds, ignite hope, and guide you on the journey of growth, resilience, and greatness.
+# प्रेरणा कोश (Prerana Kosh)
+
+यह प्रोजेक्ट भारत की सबसे बड़ी प्रेरणादायक सामग्री का डिजिटल भंडार है। इसमें सफलता की कहानियाँ, प्रेरणादायक विचार, लेख, वीडियो और छात्रों के लिए विशेष सामग्री शामिल है।
+
+## प्रोजेक्ट संरचना
+
+- `index.html` : मुख्य होमपेज (आपका HTML यहाँ है)
+- `assets/` : छवियाँ, भविष्य के CSS/JS फाइलों के लिए
+- `.github/` : प्रोजेक्ट निर्देश और गाइडलाइन
+
+## कैसे चलाएँ
+
+1. इस प्रोजेक्ट फोल्डर को खोलें।
+2. `index.html` फाइल को अपने ब्राउज़र में खोलें।
+
+## योगदान
+
+- सुझाव, सुधार या नई सामग्री के लिए संपर्क करें।
+
+---
+
+**डिजाइन और विकास:** प्रेरणा कोश टीम

@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रेरणा कोश - अपनी सफलता की कहानी यहाँ से शुरू करें</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #FF9933;
+            --green: #138808;
+            --white: #FFFFFF;
+            --light-bg: #FFF5E6;
+            --dark-bg: #1A1A1A;
+            --dark-text: #F5F5F5;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+
+        body.dark-mode {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: var(--transition);
+        }
+
+        body.dark-mode header {
+            background-color: #2D2D2D;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--saffron);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--saffron);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        body.dark-mode nav a {
+            color: var(--dark-text);
+        }
+
+        nav a:hover {
+            color: var(--saffron);
+            background-color: rgba(255, 153, 51, 0.1);
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+            border-radius: 25px;
+            padding: 5px 15px;
+            transition: var(--transition);
+        }
+
+        body.dark-mode .search-bar {
+            background-color: #3D3D3D;
+        }
+
+        .search-bar input {
+            border: none;
+            background: transparent;
+            padding: 8px;
+            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+            outline: none;
+            width: 200px;
+        }
+
+        body.dark-mode .search-bar input {
+            color: var(--dark-text);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #333;
+            transition: var(--transition);
+        }
+
+        body.dark-mode .theme-toggle {
+            color: var(--dark-text);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+
+        body.dark-mode .mobile-menu-btn {
+            color: var(--dark-text);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--saffron) 0%, var(--green) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://placehold.co/1200x600/FF9933/FFFFFF?text=प्रेरणादायक+छवि');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--saffron);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            border: 2px solid var(--white);
+            margin: 0 10px;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--saffron);
+        }
+
+        /* Quote of the Day */
+        .quote-section {
+            padding: 60px 0;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        body.dark-mode .quote-section {
+            background-color: #2D2D2D;
+        }
+
+        .quote-section h2 {
+            font-size: 1.8rem;
+            color: var(--saffron);
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .quote-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--saffron);
+        }
+
+        .quote-card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        body.dark-mode .quote-card {
+            background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
+        }
+
+        .quote-card::before {
+            content: """;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 6rem;
+            color: rgba(255, 153, 51, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .quote-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-author {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--saffron);
+            font-style: italic;
+        }
+
+        .share-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .share-btn {
+            background-color: var(--saffron);
+            color: var(--white);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .share-btn:hover {
+            background-color: #e68a2e;
+            transform: translateY(-2px);
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        body.dark-mode .categories {
+            background-color: #1F1F1F;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--saffron);
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--saffron), var(--green));
+            border-radius: 2px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .category-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body.dark-mode .category-card {
+            background-color: #2D2D2D;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .category-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            padding: 20px;
+            color: var(--white);
+        }
+
+        .category-content {
+            padding: 25px;
+        }
+
+        .category-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        body.dark-mode .category-title {
+            color: var(--dark-text);
+        }
+
+        .category-desc {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        body.dark-mode .category-desc {
+            color: #ccc;
+        }
+
+        .category-link {
+            display: inline-block;
+            color: var(--saffron);
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .category-link:hover {
+            color: var(--green);
+        }
+
+        /* Featured Content */
+        .featured {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        body.dark-mode .featured {
+            background-color: #2D2D2D;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .featured-card {
+            background-color: var(--light-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body.dark-mode .featured-card {
+            background-color: #333333;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .featured-content {
+            padding: 20px;
+        }
+
+        .featured-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        body.dark-mode .featured-title {
+            color: var(--dark-text);
+        }
+
+        .featured-excerpt {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        body.dark-mode .featured-excerpt {
+            color: #ccc;
+        }
+
+        .featured-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--saffron);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--saffron);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .footer-desc {
+            color: #ccc;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-heading::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--saffron);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--saffron);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #444;
+            color: var(--white);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--saffron);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .search-bar input {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-buttons {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 30px;
+                transition: var(--transition);
+                box-shadow: var(--shadow);
+                z-index: 99;
+            }
+            
+            body.dark-mode nav ul {
+                background-color: #2D2D2D;
+            }
+            
+            nav ul.active {
+                left: 0;
+            }
+            
+            nav ul li {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .quote-card {
+                padding: 30px 20px;
+            }
+            
+            .quote-text {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .btn {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+            
+            .share-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">प्रे</div>
+                प्रेरणा कोश
+            </a>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#">मुखपृष्ठ</a></li>
+                    <li><a href="#categories">श्रेणियाँ</a></li>
+                    <li><a href="#daily-dose">दैनिक प्रेरणा</a></li>
+                    <li><a href="#about">हमारे बारे में</a></li>
+                    <li><a href="#contact">संपर्क करें</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+            
+            <div class="nav-buttons">
+                <div class="search-bar">
+                    <input type="text" placeholder="खोजें... (जैसे: प्रेरणा, सफलता)">
+                </div>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="fade-in">अपनी सफलता की कहानी यहाँ से शुरू करें</h1>
+            <p class="fade-in">भारत की सबसे बड़ी प्रेरणादायक सामग्री का भंडार - सफलता की कहानियाँ, प्रेरणादायक विचार, और जीवन बदलने वाले लेख</p>
+            <div class="fade-in">
+                <a href="#categories" class="btn">श्रेणियाँ देखें</a>
+                <a href="#daily-dose" class="btn btn-outline">दैनिक प्रेरणा</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote of the Day -->
+    <section class="quote-section">
+        <div class="container">
+            <h2>आज का प्रेरणादायक विचार</h2>
+            <div class="quote-card fade-in">
+                <p class="quote-text">सफलता का रहस्य यह नहीं है कि आप क्या करते हैं, बल्कि यह है कि आप अपने काम को कैसे करते हैं। जब आप अपने काम में प्रेम डालते हैं, तो सफलता स्वाभाविक रूप से आपके पास आती है।</p>
+                <p class="quote-author">- स्वामी विवेकानंद</p>
+                <div class="share-buttons">
+                    <button class="share-btn">WhatsApp पर शेयर करें</button>
+                    <button class="share-btn">कॉपी करें</button>
+                    <button class="share-btn">डाउनलोड करें</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">श्रेणियाँ</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card fade-in">
+                    <div class="category-img" style="background-image: url('https://placehold.co/600x400/FF9933/FFFFFF?text=सफलता+की+कहानियाँ')">
+                        <div class="category-overlay">
+                            <h3>सफलता की कहानियाँ</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">सफलता की कहानियाँ</h3>
+                        <p class="category-desc">महान भारतीय व्यक्तित्वों की प्रेरणादायक जीवन यात्राएँ जो आपको सफलता के मार्ग पर ले जाएंगी।</p>
+                        <a href="#" class="category-link">अधिक देखें →</a>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card fade-in">
+                    <div class="category-img" style="background-image: url('https://placehold.co/600x400/138808/FFFFFF?text=प्रेरणादायक+विचार')">
+                        <div class="category-overlay">
+                            <h3>प्रेरणादायक विचार</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">प्रेरणादायक विचार</h3>
+                        <p class="category-desc">महान विचारकों, नेताओं और दार्शनिकों के विचार जो आपके दिन की शुरुआत को बेहतर बनाएंगे।</p>
+                        <a href="#" class="category-link">अधिक देखें →</a>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card fade-in">
+                    <div class="category-img" style="background-image: url('https://placehold.co/600x400/FFCC99/333333?text=लेख')">
+                        <div class="category-overlay">
+                            <h3>लेख</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">लेख</h3>
+                        <p class="category-desc">व्यक्तिगत विकास, समय प्रबंधन, लक्ष्य निर्धारण और अन्य विषयों पर गहन लेख।</p>
+                        <a href="#" class="category-link">अधिक देखें →</a>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card fade-in">
+                    <div class="category-img" style="background-image: url('https://placehold.co/600x400/3399FF/FFFFFF?text=वीडियो')">
+                        <div class="category-overlay">
+                            <h3>वीडियो</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">वीडियो</h3>
+                        <p class="category-desc">प्रेरणादायक भाषण, साक्षात्कार और व्याख्यान जो आपको नई ऊर्जा प्रदान करेंगे।</p>
+                        <a href="#" class="category-link">अधिक देखें →</a>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card fade-in">
+                    <div class="category-img" style="background-image: url('https://placehold.co/600x400/99CCFF/333333?text=छात्रों+के+लिए')">
+                        <div class="category-overlay">
+                            <h3>छात्रों के लिए</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">छात्रों के लिए</h3>
+                        <p class="category-desc">परीक्षा की तैयारी, अध्ययन युक्तियाँ, और शैक्षिक प्रेरणा के लिए विशेष सामग्री।</p>
+                        <a href="#" class="category-link">अधिक देखें →</a>
+                    </div>
+                </a>
+                
+                <a href="#" class="category-card fade-in">
+                    <div class="category-img" style="background-image: url('https://placehold.co/600x400/FF99CC/FFFFFF?text=दैनिक+प्रेरणा')">
+                        <div class="category-overlay">
+                            <h3>दैनिक प्रेरणा</h3>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3 class="category-title">दैनिक प्रेरणा</h3>
+                        <p class="category-desc">रोजाना नया प्रेरणादायक विचार, छोटी कहानी और आज का विचार जो आपके दिन को बेहतर बनाए।</p>
+                        <a href="#" class="category-link">अधिक देखें →</a>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">नवीनतम सामग्री</h2>
+            <div class="featured-grid">
+                <a href="#" class="featured-card fade-in">
+                    <div class="featured-img" style="background-image: url('https://placehold.co/600x400/FF9933/FFFFFF?text=एपीजे+अब्दुल+कलाम')"></div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">डॉ. एपीजे अब्दुल कलाम: विज्ञान और आध्यात्मिकता का अनूठा संगम</h3>
+                        <p class="featured-excerpt">भारत के मिसाइल मैन के जीवन से सीखें कि कैसे विज्ञान और आध्यात्मिकता एक साथ चल सकते हैं और कैसे सपने पूरे होते हैं।</p>
+                        <div class="featured-meta">
+                            <span>2 दिन पहले</span>
+                            <span>सफलता की कहानियाँ</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="featured-card fade-in">
+                    <div class="featured-img" style="background-image: url('https://placehold.co/600x400/138808/FFFFFF?text=पढ़ाई+की+युक्तियाँ')"></div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">परीक्षा की तैयारी: 7 वैज्ञानिक तरीके जो आपके अंक बढ़ाएंगे</h3>
+                        <p class="featured-excerpt">अपनी पढ़ाई को अधिक प्रभावी बनाने के लिए वैज्ञानिक रूप से सिद्ध तरीके जो आपको बेहतर परिणाम देंगे।</p>
+                        <div class="featured-meta">
+                            <span>5 दिन पहले</span>
+                            <span>छात्रों के लिए</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="featured-card fade-in">
+                    <div class="featured-img" style="background-image: url('https://placehold.co/600x400/FFCC99/333333?text=धैर्य+का+महत्व')"></div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">धैर्य: सफलता की कुंजी जिसे हम अक्सर भूल जाते हैं</h3>
+                        <p class="featured-excerpt">धैर्य क्यों महत्वपूर्ण है, कैसे इसे विकसित किया जाए, और कैसे यह आपके जीवन में सकारात्मक परिवर्तन ला सकता है।</p>
+                        <div class="featured-meta">
+                            <span>1 सप्ताह पहले</span>
+                            <span>लेख</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Dose Section -->
+    <section class="quote-section" id="daily-dose">
+        <div class="container">
+            <h2>दैनिक प्रेरणा</h2>
+            <div class="quote-card fade-in">
+                <p class="quote-text">आज का विशेष विचार: "जीवन में सबसे बड़ी जीत वह है जब आप अपने मन की नकारात्मक आवाज़ को शांत कर देते हैं और अपने सपनों पर विश्वास करना शुरू कर देते हैं।"</p>
+                <p class="quote-author">- आज का विचार</p>
+                <div class="share-buttons">
+                    <button class="share-btn">WhatsApp पर शेयर करें</button>
+                    <button class="share-btn">ईमेल करें</button>
+                    <button class="share-btn">सब्सक्राइब करें</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="categories" id="about">
+        <div class="container">
+            <h2 class="section-title">हमारे बारे में</h2>
+            <div class="quote-card fade-in" style="max-width: 900px; margin: 0 auto;">
+                <h3 style="color: var(--saffron); margin-bottom: 20px; text-align: center;">प्रेरणा कोश का मिशन</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 20px; text-align: justify;">
+                    प्रेरणा कोश का उद्देश्य हिंदी भाषी दर्शकों को गुणवत्तापूर्ण प्रेरणादायक सामग्री प्रदान करना है जो उनके जीवन में सकारात्मक परिवर्तन ला सके। हम विश्वास करते हैं कि हर व्यक्ति के अंदर असीमित क्षमता होती है, और सही प्रेरणा और मार्गदर्शन से वह अपने सपनों को साकार कर सकता है।
+                </p>
+                <p style="font-size: 1.1rem; margin-bottom: 20px; text-align: justify;">
+                    हमारी टीम भारत के विभिन्न कोनों से प्रेरणादायक कहानियाँ, विचार और लेख एकत्र करती है और उन्हें आप तक पहुँचाती है। हमारा लक्ष्य हर दिन हजारों लोगों के जीवन में सकारात्मक बदलाव लाना है।
+                </p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="#contact" class="btn" style="background-color: var(--saffron); color: var(--white);">हमसे संपर्क करें</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="featured" id="contact">
+        <div class="container">
+            <h2 class="section-title">संपर्क करें</h2>
+            <div class="quote-card fade-in" style="max-width: 700px; margin: 0 auto;">
+                <form>
+                    <div style="margin-bottom: 20px;">
+                        <label for="name" style="display: block; margin-bottom: 5px; font-weight: 500;">आपका नाम</label>
+                        <input type="text" id="name" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;" placeholder="अपना नाम दर्ज करें">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; margin-bottom: 5px; font-weight: 500;">ईमेल पता</label>
+                        <input type="email" id="email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;" placeholder="अपना ईमेल पता दर्ज करें">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="message" style="display: block; margin-bottom: 5px; font-weight: 500;">संदेश</label>
+                        <textarea id="message" rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;" placeholder="अपना संदेश दर्ज करें"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: var(--saffron); color: var(--white); width: 100%;">संदेश भेजें</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="#" class="footer-logo">प्रेरणा कोश</a>
+                    <p class="footer-desc">भारत की सबसे बड़ी प्रेरणादायक सामग्री का डिजिटल भंडार। हर दिन नई प्रेरणा, नई सीख, नई ऊर्जा।</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">yt</a>
+                        <a href="#" class="social-link">w</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">श्रेणियाँ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">सफलता की कहानियाँ</a></li>
+                        <li><a href="#">प्रेरणादायक विचार</a></li>
+                        <li><a href="#">लेख</a></li>
+                        <li><a href="#">वीडियो</a></li>
+                        <li><a href="#">छात्रों के लिए</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">त्वरित लिंक</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">मुखपृष्ठ</a></li>
+                        <li><a href="#">दैनिक प्रेरणा</a></li>
+                        <li><a href="#">हमारे बारे में</a></li>
+                        <li><a href="#">संपर्क करें</a></li>
+                        <li><a href="#">गोपनीयता नीति</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">सदस्यता लें</h3>
+                    <p class="footer-desc">रोजाना सुबह प्रेरणादायक विचार और लेख अपने ईमेल पर पाएं।</p>
+                    <div style="margin-top: 15px;">
+                        <input type="email" placeholder="ईमेल पता दर्ज करें" style="width: 100%; padding: 10px; border: 1px solid #555; border-radius: 5px; background-color: #444; color: var(--white); margin-bottom: 10px;">
+                        <button style="width: 100%; padding: 10px; background-color: var(--saffron); color: var(--white); border: none; border-radius: 5px; cursor: pointer; font-weight: 500;">सब्सक्राइब करें</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 प्रेरणा कोश. सर्वाधिकार सुरक्षित। | डिजाइन और विकास: प्रेरणा कोश टीम</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggle.textContent = '☀️';
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Add fade-in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for fade-in elements
+        fadeElements.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+        
+        // Run on load and scroll
+        window.addEventListener('load', fadeInOnScroll);
+        window.addEventListener('scroll', fadeInOnScroll);
+        
+        // Share button functionality
+        const shareButtons = document.querySelectorAll('.share-btn');
+        shareButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const buttonText = this.textContent;
+                if (buttonText.includes('कॉपी')) {
+                    const quoteText = document.querySelector('.quote-text').textContent;
+                    const quoteAuthor = document.querySelector('.quote-author').textContent;
+                    const textToCopy = `"${quoteText}"\n${quoteAuthor}`;
+                    
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        alert('प्रेरणादायक विचार कॉपी हो गया!');
+                    }).catch(err => {
+                        console.error('कॉपी करने में त्रुटि: ', err);
+                    });
+                } else if (buttonText.includes('शेयर')) {
+                    alert('WhatsApp पर शेयर करने की सुविधा जल्द आ रही है!');
+                } else if (buttonText.includes('डाउनलोड')) {
+                    alert('इस विचार को छवि के रूप में डाउनलोड करने की सुविधा जल्द आ रही है!');
+                } else if (buttonText.includes('ईमेल')) {
+                    alert('ईमेल करने की सुविधा जल्द आ रही है!');
+                } else if (buttonText.includes('सब्सक्राइब')) {
+                    alert('दैनिक प्रेरणा ईमेल के लिए सब्सक्राइब करने की सुविधा जल्द आ रही है!');
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('धन्यवाद! हम आपके संदेश का शीघ्र ही उत्तर देंगे।');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
